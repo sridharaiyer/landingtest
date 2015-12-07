@@ -4,44 +4,49 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Landing Page Test</title>
+    <title>Test Automation Documentation</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-collapse collapse">
-                    <ul class="nav nav-justified">
-                        <li><a data-scroll href="#about">About The App</a></li>
-                        <li><a data-scroll href="#features">Features</a></li>
-                        <li><a data-scroll href="#screenshots">Screenshots</a></li>
-                        <li><a data-scroll href="#download">Download</a></li>
-                        <li><a data-scroll href="#support">Support</a></li>
-                    </ul>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-main">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav nav-justified">
+                            <li><a data-scroll href="#about">About</a></li>
+                            <li><a data-scroll href="#features">Setup</a></li>
+                            <li><a data-scroll href="#screenshots">Scripting</a></li>
+                            <li><a data-scroll href="#download">Troubleshooting</a></li>
+                            <li><a data-scroll href="#support">Standards</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- ./container for navbar -->
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- ./navbar-header for the nav to collapse into a button for mobile view -->
+            </nav>
+            <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 header-main">
+                <h1 class="title-header-page front-header">A robust automated test framework @CCC</h1>
             </div>
-            <!-- ./container for navbar -->
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- ./navbar-header for the nav to collapse into a button for mobile view -->
-        </nav>
+        </div>
     </header>
-    <section id="slider" class="carousel slide" data-ride="carousel">
+    <!--     <section id="slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="item active"><img src="img/slider_1.png" alt=""></div>
             <div class="item"><img src="img/slider_2.png" alt=""></div>
@@ -54,36 +59,58 @@
             <li data-target="#slider" data-slide-to="1"></li>
             <li data-target="#slider" data-slide-to="2"></li>
         </ol>
-    </section>
+    </section> -->
     <!-- #carousel -->
+    <!-- Site banner -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <div class="blue-circle animation-point1s-delay">
-                        <div><i class="fa fa-facebook"></i>
-                            <i class="fa fa-twitter"></i>
-                            <i class="fa fa-google-plus"></i>
+                        <div><i class="fa fa-coffee"></i>
                         </div>
                     </div>
-                    <h3 class="text-uppercase text-center">Facebook & Twitter</h3>
-                    <p class="text-center">Dicta dolor aspernatur reiciendis voluptates enim natus distinctio aliquid. Aut quaerat adipisci nam numquam alias suscipit, consectetur eveniet eius culpa quia explicabo!</p>
+                    <h3 class="text-uppercase text-center">Java development</h3>
+                    <p class="text-center">100% coding in java makes it easier and compatible to the developers at CCC</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <div class="blue-circle animation-point3s-delay">
-                        <div><i class="fa fa-check"></i></div>
+                        <div><i class="fa fa-user"></i></div>
                     </div>
-                    <h3 class="text-uppercase text-center">Online Support</h3>
-                    <p class="text-center">Dicta dolor aspernatur reiciendis voluptates enim natus distinctio aliquid. Aut quaerat adipisci nam numquam alias suscipit, consectetur eveniet eius culpa quia explicabo!</p>
+                    <h3 class="text-uppercase text-center">Hudson Support</h3>
+                    <p class="text-center">Kick off your automated scripts with your build deployment</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <div class="blue-circle animation-point6s-delay">
-                        <div><i class="fa fa-apple"></i>
-                            <i class="fa fa-android"></i>
+                        <div><i class="fa fa-server"></i>
                         </div>
                     </div>
-                    <h3 class="text-uppercase text-center">Android and iOS</h3>
-                    <p class="text-center">Dicta dolor aspernatur reiciendis voluptates enim natus distinctio aliquid. Aut quaerat adipisci nam numquam alias suscipit, consectetur eveniet eius culpa quia explicabo!</p>
+                    <h3 class="text-uppercase text-center">Web service testing</h3>
+                    <p class="text-center">Client agnostic testing using web services with seamless browser ui testing</p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="blue-circle animation-point6s-delay">
+                        <div><i class="fa fa-database"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-uppercase text-center">database testing</h3>
+                    <p class="text-center">Verify backend db with seamless browser ui testing</p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="blue-circle animation-point6s-delay">
+                        <div><i class="fa fa-bar-chart"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-uppercase text-center">Test Reporting</h3>
+                    <p class="text-center">View your test results beautifully in a html document.</p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="blue-circle animation-point6s-delay">
+                        <div><i class="fa fa-file-text-o"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-uppercase text-center">page object design</h3>
+                    <p class="text-center">write java object classes containing your web page elements for robust automated interactions</p>
                 </div>
             </div>
             <!-- ./row -->
@@ -92,14 +119,14 @@
     </section>
     <!-- #about -->
     <section id="features" class="features">
-        <h2 class="text-center text-uppercase">Features</h2>
+        <h2 class="text-center text-uppercase">Setup</h2>
         <div class="container">
             <div class="row">
                 <div class="left-features col-sm-4">
                     <div class="item-feature row">
                         <div class="content col-sm-8">
-                            <h4 class="text-uppercase">Facebook & Twitter</h4>
-                            <p>Suscipit hic tempore magni ducimus.</p>
+                            <h4 class="text-uppercase">IDE</h4>
+                            <p>Setup Eclipse, Maven and Tortoise SVN and setup up your maven project containing the framework dependency.</p>
                         </div>
                         <div class="col-sm-4">
                             <div class="blue-circle animation-point3s-delay">
@@ -113,8 +140,8 @@
                     <!-- ./item-feature -->
                     <div class="item-feature row">
                         <div class="content col-sm-8">
-                            <h4 class="text-uppercase">User Points</h4>
-                            <p>Suscipit hic tempore magni ducimus.</p>
+                            <h4 class="text-uppercase">UI Script Development</h4>
+                            <p>Extend the framework to write a JUnit, a flow object class and a page object class to develop tests automating the browser.</p>
                         </div>
                         <div class="col-sm-4">
                             <div class="blue-circle animation-point3s-delay">
@@ -125,8 +152,8 @@
                     <!-- ./item-feature -->
                     <div class="item-feature row">
                         <div class="content col-sm-8">
-                            <h4 class="text-uppercase">Buy tickets online</h4>
-                            <p>Suscipit hic tempore magni ducimus.</p>
+                            <h4 class="text-uppercase">Web Service Script Development</h4>
+                            <p>Create web service template files from fiddler session captures and use the framework API to develop code to test web services.</p>
                         </div>
                         <div class="col-sm-4">
                             <div class="blue-circle animation-point3s-delay">
@@ -307,8 +334,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/7.1.1/js/smooth-scroll.min.js"></script>
-    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
- -->
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
